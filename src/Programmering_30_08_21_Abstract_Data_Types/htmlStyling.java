@@ -1,6 +1,7 @@
 package Programmering_30_08_21_Abstract_Data_Types;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class htmlStyling extends htmlTag{
     private String color;
@@ -18,6 +19,16 @@ public abstract class htmlStyling extends htmlTag{
         colors.add("yellow");
         colors.add("coral");
         colors.add("cyan");
+    }
+
+    public backgroundColor getRandomColor(){
+        Random rand = new Random();
+        float red = rand.nextFloat();
+        float green = rand.nextFloat();
+        float blue = rand.nextFloat();
+        backgroundColor randomBackgroundColor = new backgroundColor(red, green, blue);
+
+        return randomBackgroundColor;
     }
 
     public String getColor() {

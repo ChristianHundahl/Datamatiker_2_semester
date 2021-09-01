@@ -2,7 +2,7 @@ package Programmering_30_08_21_Abstract_Data_Types;
 
 import java.util.ArrayList;
 
-public class aTag extends htmlTag{
+public class aTag extends htmlStyling{
     private String url;
     static ArrayList<String> urls = new ArrayList<>();
 
