@@ -6,14 +6,19 @@ public class aTag extends htmlTag{
     private String url;
     static ArrayList<String> urls = new ArrayList<>();
 
-    public aTag() {
+    public aTag() { //Eksisterer for muligheden for at fylde noget nyt på, f.eks. hvis værdier til constructor ukendte fra start
+    }
+
+    public ArrayList<String> getUrls() {
+        return urls;
     }
 
     //Opret collection (Arraylist) med url (links)
     //<a href="https://www.dr.dk/">Link til DR</a> <-- eksempel
     public aTag(String id, String text, String url){
         super (id, text);
-        urls = new ArrayList<>();
+        this.url = url;
+        //urls = new ArrayList<>();
         urls.add("https://www.dr.dk/");
         urls.add("https://tv2.dk/");
         urls.add("https://www.theguardian.com/international");
