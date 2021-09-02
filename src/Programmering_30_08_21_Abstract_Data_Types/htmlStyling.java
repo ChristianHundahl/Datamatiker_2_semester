@@ -7,6 +7,7 @@ public abstract class htmlStyling extends htmlTag{
     private String color;
     public static ArrayList<String> colors;
 
+
     public htmlStyling() {
     }
 
@@ -21,12 +22,12 @@ public abstract class htmlStyling extends htmlTag{
         colors.add("cyan");
     }
 
-    public backgroundColor getRandomColor(){
+    public String getRandomColor(){
         Random rand = new Random();
-        float red = rand.nextFloat();
-        float green = rand.nextFloat();
-        float blue = rand.nextFloat();
-        backgroundColor randomBackgroundColor = new backgroundColor(red, green, blue);
+        float red = rand.nextInt(255);
+        float green = rand.nextInt(255);
+        float blue = rand.nextInt(255);
+        String randomBackgroundColor = red + "," + green + "," + blue;
 
         return randomBackgroundColor;
     }

@@ -17,7 +17,7 @@ public class headerTag extends htmlStyling {
 
     @Override
     String toHTMLString() {
-        return "<h" + this.getNumber() + " " + "id=" + '"' + this.getId() + '"' + " " + "style=" + '"' + "color:" + this.getColor() + '"' + ">" + this.getText() + "</h" + getNumber() + ">";
+        return "<h" + this.getNumber() + " " + "id=" + '"' + this.getId() + '"' + " " + "style=" + '"' + "background-color: rgb(" + this.getRandomColor() + ");" + "color:" + this.getColor() + '"' + ">" + this.getText() + "</h" + getNumber() + ">";
     }
 
     @Override
