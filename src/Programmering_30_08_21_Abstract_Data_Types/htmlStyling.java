@@ -21,7 +21,6 @@ public abstract class htmlStyling extends htmlTag{
         colors.add("coral");
         colors.add("cyan");
     }
-
     public String getRandomColor(){
         Random rand = new Random();
         float red = rand.nextInt(255);
@@ -39,7 +38,6 @@ public abstract class htmlStyling extends htmlTag{
     public void setColor(String color) {
         this.color = color;
     }
-
     public String toStyle(){
         return "style=" +'"' + "color:" + this.getColor()+ '"';
     }

@@ -33,7 +33,7 @@ public class Book {
         this.publicationYear = newPublicationYear;
     }
 
-    public String getIsbn(String thisIsbn){
+    public String getIsbn(){
         return this.ISBN;
     }
     public void setISBN(String newISBN){
@@ -42,11 +42,13 @@ public class Book {
 
     //TODO: metode til at finde bogens ISBN
     @Override
-    public boolean equals(Object Book) {//
-        if (this == Book) return true;
-        if (Book == null || getClass() != Book.getClass()) return false;
-        Book o = new Book(getIsbn(Book o));
-        return Objects.equals(ISBN, Book.ISBN);
+    public boolean equals(Object o) {
+        if (o instanceof Book) {
+        Book other = (Book) o;
+        return Book.ISBN == other.ISBN;
+        } else {
+            return false;
+        }
     }
 
     @Override

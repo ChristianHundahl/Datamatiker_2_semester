@@ -10,8 +10,6 @@ public class Main {
 
         aTag a1 = new aTag("r","e", "t");
 
-
-
         aTag a2 = new aTag("a1-1", "Jeg er en aTag", "");
         ArrayList<String> urlList = aTag.urls;
         for (int i = 1; i <= 10; i++) {
