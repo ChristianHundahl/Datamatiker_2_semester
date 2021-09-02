@@ -21,7 +21,7 @@ public class Main {
         }
 
         for (int i = 1; i <= 5; i++){
-            headerTag h2 = new headerTag("h" + i, "Jeg er en headerTag", i);
+            headerTag h2 = new headerTag("h1-" + i, "Jeg er en headerTag", 1);
             ArrayList<String> colorList = htmlStyling.colors;
             h2.setColor(colorList.get(i-1));
             h2.print();

@@ -13,7 +13,7 @@ public class Bibliotek {
         bibliotek.add(Book2);
         bibliotek.add(Book3);
 
-        doesListContain(Book1, bibliotek);
+        System.out.println(bibliotek.equals("9780470371732"));
     }
     //Måske løsning: https://stackoverflow.com/questions/66972456/check-if-parameter-is-duplicated-in-a-list
     //Skriv en metode der returnerer True hvis en bog med dette ISBN er på listen.

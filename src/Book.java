@@ -1,3 +1,7 @@
+import Programmering_30_08_21_Abstract_Data_Types.htmlTag;
+
+import java.util.Objects;
+
 public class Book {
     //ISBN
     //Titel
@@ -37,9 +41,16 @@ public class Book {
     }
 
     //TODO: metode til at finde bogens ISBN
-
-    public boolean equals(Book obj) {
-        return (this.ISBN.equals(((Book) obj).ISBN));
+    @Override
+    public boolean equals(Object Book) {//
+        if (this == Book) return true;
+        if (Book == null || getClass() != Book.getClass()) return false;
+        Book o = new Book(getIsbn(Book o));
+        return Objects.equals(ISBN, Book.ISBN);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(ISBN);
+    }
 }
