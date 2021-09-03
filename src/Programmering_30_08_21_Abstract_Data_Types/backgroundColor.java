@@ -9,7 +9,6 @@ public class backgroundColor{
     float blue;
 
     public backgroundColor(float red, float green, float blue) {
-
     }
 
     public float getRed() {

@@ -16,7 +16,7 @@ public class Bibliotek {
         bibliotek.add(Book4);
         //boolean bool = Book1.equals(Book4);
         for (Book findThis : bibliotek){
-            if (findThis.equals("9780470371732")){
+            if (bibliotek.contains("9780470371732")){
                 System.out.println("Book found");
             }
             else{

@@ -45,7 +45,7 @@ public class Book {
     public boolean equals(Object o) {
         if (o instanceof Book) {
         Book other = (Book) o;
-        return Book.ISBN == other.ISBN;
+        return ISBN == other.ISBN;
         } else {
             return false;
         }
